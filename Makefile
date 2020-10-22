@@ -1,4 +1,4 @@
-CFLAGS 	:= $(shell pkg-config --cflags libpinyin)
+CFLAGS 	:= --std=c++11 $(shell pkg-config --cflags libpinyin)
 LIBS 	:= $(shell pkg-config --libs libpinyin)
 DATADIR := $(shell pkg-config --variable=pkgdatadir libpinyin)
 
